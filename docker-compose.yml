@@ -15,6 +15,7 @@ services:
       - backend
     networks:
       - app-network
+    restart: always
 
   backend:
     build:
@@ -45,6 +46,7 @@ services:
               count: all
               capabilities: [gpu]
     runtime: nvidia
+    restart: always
 
   mediamtx:
     image: mkghkk/mediamtx:latest
@@ -57,6 +59,7 @@ services:
       - "8889:8889"
     networks:
       - app-network
+    restart: always
 
   mongodb:
     image: mongo:latest
@@ -67,6 +70,7 @@ services:
       - mongodb-data:/data/db
     networks:
       - app-network
+    restart: always
 
 volumes:
   monitoring-static:
