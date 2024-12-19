@@ -11,6 +11,7 @@ This guide will walk you through the steps required to get the project up and ru
 1. **PC with GPU**
 
    - This project requires a PC with a GPU.
+   - Make sure nvidia drivers are installed and working properly.
    - Install the NVIDIA Container Toolkit by following the instructions [here](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
 
 2. **Environment Variables**
