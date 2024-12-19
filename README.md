@@ -25,8 +25,8 @@ This guide will walk you through the steps required to get the project up and ru
 1. Clone the project repository to your local machine:
 
    ```bash
-   git clone <repository-url>
-   cd <project-folder>
+   git clone https://github.com/Mkhgkk/isafe-guard.git
+   cd isafe-guard
    ```
 
 2. Make the `pull-projects.sh` script executable:
