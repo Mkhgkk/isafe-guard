@@ -65,13 +65,19 @@ services:
     image: mkghkk/mediamtx:latest
     container_name: mediamtx
     expose:
-      - "8889" # Expose only for Nginx
+      - "8889"
     ports:
       - "1935:1935"
       - "8080:8080"
       - "8000:8000"
       - "8554:8554"
       - "8889:8889"
+      - "8890:8890/udp"
+      - "8189:8189/udp"
+    environment:
+      - MTX_WEBRTCADDITIONALHOSTS=${HOST_IP_ADDRESS}
+    volumes:
+      - ./mediamtx.yml:/mediamtx.yml:ro
     networks:
       - app-network
     restart: always
