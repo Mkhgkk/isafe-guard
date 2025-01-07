@@ -105,6 +105,8 @@ services:
       - nginx
     networks:
       - app-network
+    profiles:
+      - cloudflared
 
 volumes:
   monitoring-static:
