@@ -24,8 +24,6 @@ services:
     container_name: web
     expose:
       - "80"
-      - "8890:8890/udp"
-      - "8189:8189/udp"
     networks:
       - app-network
     depends_on:
